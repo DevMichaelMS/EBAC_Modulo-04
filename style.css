@@ -1,0 +1,29 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #00ccff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn-esq {
+    margin-top: 10px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+.btn-esq:hover {
+    background-color: #cc5200;
+}
