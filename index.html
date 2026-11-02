@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sintaxe do CSS</title>
+    <title>Portal de Notícias</title>
 </head>
 <body>
     <header class="header">
-        <h1>Formulário de Login</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-        <hr>
+        <h1>Portal de Notícias</h1>
     </header>
 
-    <form action="login.php" method="post" class="login-form">
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario" name="usuario" required>
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        <br>
-        
-        <button type="submit" class="btn">Entrar</button>
-        <button type="reset" class="btn">Limpar</button>
-        <button type="button" class="btn" onclick="window.location.href='cadastro.html'">Cadastrar</button>
-        <button type="button" class="btn-esq" onclick="window.location.href='esqueci_senha.html'">Esqueci a Senha</button>
-    </form>
+    <div class="account-bar">
+        <form action="login.php" method="post" class="login-form">
+            <label for="usuario">
+                Usuário
+                <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+            </label>
+            <label for="senha">
+                Senha
+                <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+            </label>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <nav class="account-links" aria-label="Opções de conta">
+            <a href="cadastro.html">Cadastrar</a>
+            <a href="esqueci_senha.html">Esqueci a senha</a>
+        </nav>
+    </div>
 
-    <hr>
-
-    <h2 class="section-title">Portal de Notícias</h2>
     <div class="container">
         <nav>
             <ul>
