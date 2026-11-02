@@ -16,13 +16,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header time {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    padding: 5px;
+.header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -47,7 +47,12 @@ nav ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 .container {
     max-width: 800px;
@@ -94,8 +99,8 @@ nav ul {
 .articles article img {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
-    height: 180px;
+    margin-bottom: 10px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -113,6 +118,64 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #97fdd6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articles article a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #97fdd6;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.articles article a:hover {
+    background-color: #60a38a;
+}
+
+.articles article h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.articles article p {
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+}
+
+.articles article time {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+    padding: 5px;
+    text-align: center;
+}
+
+#esportes {
+    background-color: #98fc5636;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#economia {
+    background-color: #fcf59836;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#politica {
+    background-color: #fc989836;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
