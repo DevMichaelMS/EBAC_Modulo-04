@@ -7,7 +7,7 @@
     <title>Sintaxe do CSS</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Formulário de Login</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -15,7 +15,7 @@
         <hr>
     </header>
 
-    <form action="">
+    <form action="login.php" method="post" class="login-form">
         <label for="usuario">Usuário:</label>
         <input type="text" id="usuario" name="usuario" required>
         <br>
@@ -31,105 +31,122 @@
 
     <hr>
 
-    <h2>Portal de Notícias</h2>
-    <nav>
-        <ul>
-            <li><a href="#sports" title="Ir para a seção de Esportes">Esportes</a></li>
-            <li><a href="#economia" title="Ir para a seção de Economia">Economia</a></li>
-            <li><a href="#política" title="Ir para a seção de Política">Política</a></li>
-        </ul>
-    </nav>
-    <section id="sports">
-        <h3>Esportes</h3>
-        <article>
-            <img src="imagens/basquete.jpg" alt="Jogo de Basquete">
-            <header>
-                <time datetime="2024-06-15">15 de Junho de 2024 as 20:00</time>
-            </header>
-            <h4>Grande clássico na noite de hoje</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/futebol.jpg" alt="Jogo de Futebol">
-            <header>
-                <time datetime="2024-06-14">14 de Junho de 2024 as 18:00</time>
-            </header>
-            <h4>Final do campeonato estadual</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/futebol-americano.jpg" alt="Jogo de Futebol Americano">
-            <header>
-                <time datetime="2024-06-13">13 de Junho de 2024 as 16:00</time>
-            </header>
-            <h4>Campeonato internacional de Futebol Americano</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
+    <h2 class="section-title">Portal de Notícias</h2>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#esportes" title="Ir para a seção de Esportes">Esportes</a></li>
+                <li><a href="#economia" title="Ir para a seção de Economia">Economia</a></li>
+                <li><a href="#politica" title="Ir para a seção de Política">Política</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="esportes">
+        <h3 class="section-title">Esportes</h3>
+        <div class="articles">
+                <article>
+                <img src="imagens/basquete.jpg" alt="Jogo de Basquete">
+                <header>
+                    <time datetime="2024-06-15">15 de Junho de 2024 as 20:00</time>
+                </header>
+                <h4>Grande clássico na noite de hoje</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/futebol.jpg" alt="Jogo de Futebol">
+                <header>
+                    <time datetime="2024-06-14">14 de Junho de 2024 as 18:00</time>
+                </header>
+                <h4>Final do campeonato estadual</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/futebol-americano.jpg" alt="Jogo de Futebol Americano">
+                <header>
+                    <time datetime="2024-06-13">13 de Junho de 2024 as 16:00</time>
+                </header>
+                <h4>Campeonato internacional de Futebol Americano</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+                        <article>
+                <img src="imagens/futebol-americano.jpg" alt="Jogo de Futebol Americano">
+                <header>
+                    <time datetime="2024-06-13">13 de Junho de 2024 as 16:00</time>
+                </header>
+                <h4>Campeonato internacional de Futebol Americano</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+        </div>
     </section>
 
     <section id="economia">
-        <h3>Economia</h3>
-        <article>
-            <img src="imagens/dolares.jpg" alt="Dólares">
-            <header>
-                <time datetime="2024-06-12">12 de Junho de 2024 as 14:00</time>
-            </header>
-            <h4>Valorização do dólar frente ao real</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/euro.jpg" alt="Euro">
-            <header>
-                <time datetime="2024-06-11">11 de Junho de 2024 as 12:00</time>
-            </header>
-            <h4>Valorização do euro frente ao real</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/petroleo.jpg" alt="Petroléo">
-            <header>
-                <time datetime="2024-06-10">10 de Junho de 2024 as 10:00</time>
-            </header>
-            <h4>Valorização do petróleo frente ao real</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
+        <h3 class="section-title">Economia</h3>
+        <div class="articles">
+                <article>
+                <img src="imagens/dolares.jpg" alt="Dólares">
+                <header>
+                    <time datetime="2024-06-12">12 de Junho de 2024 as 14:00</time>
+                </header>
+                <h4>Valorização do dólar frente ao real</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/euro.jpg" alt="Euro">
+                <header>
+                    <time datetime="2024-06-11">11 de Junho de 2024 as 12:00</time>
+                </header>
+                <h4>Valorização do euro frente ao real</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/petroleo.jpg" alt="Petroléo">
+                <header>
+                    <time datetime="2024-06-10">10 de Junho de 2024 as 10:00</time>
+                </header>
+                <h4>Valorização do petróleo frente ao real</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+        </div>
     </section>
 
-    <section id="política">
-        <h3>Política</h3>
-        <article>
-            <img src="imagens/Lula_vence_eleicoes_retorno_da_esperanca.jpeg" alt="Lula vence eleições e retorna ao poder">
-            <header>
-                <time datetime="2024-06-09">09 de Junho de 2024 as 08:00</time>
-            </header>
-            <h4>Lula vence eleições e retorna ao poder</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/PF_cancela_passaporte_FB.jpg" alt="PF cancela passaporte de ex-ministro">
-            <header>
-                <time datetime="2024-06-08">08 de Junho de 2024 as 06:00</time>
-            </header>
-            <h4>PF cancela passaporte de ex-ministro Flávio Bolsonaro</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
-        <article>
-            <img src="imagens/FB-Foragido.jpg" alt="Foragido">
-            <header>
-                <time datetime="2024-06-07">07 de Junho de 2024 as 04:00</time>
-            </header>
-            <h4>Flávio Bolsonaro foge do Brasil com medo das investigações</h4>
-            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
-        </article>
+    <section id="politica">
+        <h3 class="section-title">Política</h3>
+        <div class="articles">
+                <article>
+                <img src="imagens/Lula_vence_eleicoes_retorno_da_esperanca.jpeg" alt="Lula vence eleições e retorna ao poder">
+                <header>
+                    <time datetime="2024-06-09">09 de Junho de 2024 as 08:00</time>
+                </header>
+                <h4>Lula vence eleições e retorna ao poder</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/PF_cancela_passaporte_FB.jpg" alt="PF cancela passaporte de ex-ministro">
+                <header>
+                    <time datetime="2024-06-08">08 de Junho de 2024 as 06:00</time>
+                </header>
+                <h4>PF cancela passaporte de ex-ministro Flávio Bolsonaro</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+            <article>
+                <img src="imagens/FB-Foragido.jpg" alt="Foragido">
+                <header>
+                    <time datetime="2024-06-07">07 de Junho de 2024 as 04:00</time>
+                </header>
+                <h4>Flávio Bolsonaro foge do Brasil com medo das investigações</h4>
+                <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" title="Leia mais sobre a notícia">Leia mais</a>
+            </article>
+        </div>
     </section>
     <hr>
     <footer>
